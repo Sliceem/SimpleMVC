@@ -9,6 +9,12 @@ class Home
         View::render('ProductList');
     }
 
+
+    public function AddProduct()
+    {
+        View::render('AddProduct');
+    }
+
     public function Error()
     {
         echo "Error accured";
