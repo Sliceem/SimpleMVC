@@ -3,7 +3,7 @@
 //Database config
 
 define('HOST', 'localhost');
-define('DBNAME', 'web_dev');
+define('DBNAME', 'web_db');
 define('USER', 'root');
 define('USER_PASS', '');
 
