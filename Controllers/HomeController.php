@@ -14,12 +14,14 @@ class Home
     }
 
 
-    public function AddProduct()
+    public function addProduct()
     {
         $data = [
-            'sku' => $_POST['sku'],
-            'name' => $_POST['name'],
-            'price' => $_POST['price']
+            'sku'   => $_POST['sku'],
+            'name'  => $_POST['name'],
+            'price' => $_POST['price'],
+            'info'  => $_POST['info'],
+            'image' => $_POST['image']
         ];
         $model = new Model();
         $model->addProduct($data);
@@ -31,7 +33,8 @@ class Home
             'checkbox' => $_POST['checkbox']
         ];
         $model = new Model();
-        View::render('test', $data);
+        $model->deleteProduct($data);
+        return $this->listAllProducts();
     }
 
     public function Error()

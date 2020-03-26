@@ -5,4 +5,19 @@ body {
     padding: 3rem 1.5rem;
     text-align: center;
   }
-  
+  .hide{
+    display: none;
+}
+/* Help div's hidden */
+.furniture{
+    display: none;
+}
+.car{
+    display: none;
+}
+.playstation{
+    display: none;
+}
+.laptop{
+    display: none;
+}
