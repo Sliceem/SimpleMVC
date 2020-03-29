@@ -12,7 +12,7 @@
 <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
         <div class="container">
-            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <div class="collapse navbar-collapse">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
                         <a class="nav-link mr-5" href="/home/listAllProducts">Products List</a>

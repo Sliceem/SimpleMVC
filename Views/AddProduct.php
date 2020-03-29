@@ -1,6 +1,6 @@
 <?php include_once('includes/header.php'); ?>
 <div class="container">
-    <form action="/home/addProduct" method="POST" id="addproduct">
+    <form action="/home/insertProducts" method="POST" id="addproduct">
         <div class="row">
             <div class="col-sm">
                 <div class="form-group">
@@ -27,13 +27,13 @@
                     </select>
                 </div>
                 <div class='hide' id="car">
-                    <p>Year<input class="form-control" type="text" name="dimensions" placeholder="Year"></p>
+                    <p>Year<input class="form-control" type="text" name="year" placeholder="Year"></p>
                 </div>
                 <div class='hide' id="playstation">
-                    <p>Type<input class="form-control" type="text" name="year" placeholder="Playstation Type"></p>
+                    <p>Type<input class="form-control" type="text" name="type" placeholder="Playstation Type"></p>
                 </div>
                 <div class='hide' id="furniture">
-                    <p>Dimensions<input class="form-control" type="text" name="type" placeholder="HxWxL"></p>
+                    <p>Dimensions<input class="form-control" type="text" name="dimensions" placeholder="HxWxL"></p>
                 </div>
     </form>
 </div>
@@ -50,3 +50,4 @@
 </div>
 
 <?php include_once('includes/footer.php'); ?>
+

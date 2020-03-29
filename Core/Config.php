@@ -9,3 +9,4 @@ define('USER_PASS', '');
 
 //usefull hints
 define('BR', '</br>');
+// define('URL', header("Location: " . "http://" . $_SERVER['HTTP_HOST']));
