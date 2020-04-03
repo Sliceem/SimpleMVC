@@ -1,6 +1,7 @@
 <?php include_once('includes/header.php'); ?>
 <div class="container">
     <form action="/home/insertProducts" method="POST" id="addproduct">
+        <!-- <form action="" method="POST" id="addproduct"> -->
         <div class="row">
             <div class="col-sm">
                 <div class="form-group">
@@ -17,37 +18,36 @@
                 </div>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                        <label class="input-group-text" for="inputGroupSelect01">Options</label>
+                        <label class="input-group-text" for="inputGroupSelect01">Product Type: </label>
                     </div>
-                    <select class="custom-select" id="selector-field">
+                    <select class="custom-select" id="selector-field" name='selector'>
                         <option selected>Choose...</option>
-                        <option value="car">Car</option>
-                        <option value="playstation">Playstation</option>
-                        <option value="furniture">Furniture</option>
+                        <option value="Book">Book</option>
+                        <option value="Dvd">Dvd</option>
+                        <option value="Furniture">Furniture</option>
                     </select>
                 </div>
-                <div class='hide' id="car">
-                    <p>Year<input class="form-control" type="text" name="year" placeholder="Year"></p>
+                <div class='hide' id="Book">
+                    <input class="form-control" type="text" name="weight" placeholder="Weight">
                 </div>
-                <div class='hide' id="playstation">
-                    <p>Type<input class="form-control" type="text" name="type" placeholder="Playstation Type"></p>
+                <div class='hide' id="Dvd">
+                    <input class="form-control" type="text" name="size" placeholder="Dvd Size">
                 </div>
-                <div class='hide' id="furniture">
-                    <p>Dimensions<input class="form-control" type="text" name="dimensions" placeholder="HxWxL"></p>
+                <div class='hide' id="Furniture">
+                    <input class="form-control" type="text" name="dimensions" placeholder="HxWxL">
                 </div>
     </form>
 </div>
 <div class="col-sm">
-    <div class="furniture alert alert-info" role="alert">
-        Please provide Dimension - Height, Width and Lenght in cm !
+    <div class="Book alert alert-info" role="alert">
+        Please provide Book Weight in KG!
     </div>
-    <div class="car alert alert-info" role="alert">
-        Please provide manufacture year in format like 1999/10/10!
+    <div class="Dvd alert alert-info" role="alert">
+        Please provide Dvd Size in MB!
     </div>
-    <div class="playstation alert alert-info" role="alert">
-        Please provide Playstation Type - Fat, Slim or Pro!
+    <div class="Furniture alert alert-info" role="alert">
+        Please provide Dimension - HxWxL in cm !
     </div>
 </div>
 
 <?php include_once('includes/footer.php'); ?>
-

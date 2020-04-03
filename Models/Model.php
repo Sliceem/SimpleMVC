@@ -1,30 +1,23 @@
 <?php
 
-require_once './Core/autoloader.php';
-require_once './Classes/Product.php';
+require_once './Core/init.php';
 
-class Model extends Product
+class Model
 {
 
     public function displayAll()
     {
-
+        //Fetch all Products from Databse
         $data = Database::getInstance()->query('SELECT * FROM web_db.product');
         return $data;
     }
-
+    //Get Class by Product type, and create instance
     public function addProduct($data = [])
     {
-        $data = [
-            'sku' => $data['sku'],
-            'name' => $data['name'],
-            'price' => $data['price'],
-            'info' => trim($data['year']) . trim($data['type']) . trim($data['dimensions']),
-            'image' => 'https://source.unsplash.com/200x200/?it'
-        ];
-        Database::getInstance()->addProduct("INSERT INTO web_db.product (SKU, product_name, price, product_info, image_path) VALUES (?, ?, ?, ?, ?)", $data);
+            $class = $data['selector'];
+            new $class($data);
     }
-
+    //Delete product or Products from Database
     public function deleteProduct($data = [])
     {   
         $id = implode(',', $data['checkbox']);

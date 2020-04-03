@@ -9,15 +9,12 @@ body {
     display: none;
 }
 /* Help div's hidden */
-.furniture{
+.Furniture{
     display: none;
 }
-.car{
+.Book{
     display: none;
 }
-.playstation{
-    display: none;
-}
-.laptop{
+.Dvd{
     display: none;
 }

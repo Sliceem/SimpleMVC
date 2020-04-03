@@ -4,10 +4,9 @@ $(document).ready(function(){
     //Hide div's if value not selected
     function checkValue(val){
         $('.hide').hide();
-        $('.furniture').hide();
-        $('.car').hide();
-        $('.laptop').hide();
-        $('.playstation').hide();
+        $('.Furniture').hide();
+        $('.Book').hide();
+        $('.Dvd').hide();
         $('#' + val).show();
         $('.' + val).show();
     }
